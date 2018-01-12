@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/table_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button android:id="@+id/button_1" android:text="1"/>
+            <Button android:id="@+id/button_2" android:text="2" />
+            <Button android:id="@+id/button_3" android:text="3"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button android:id="@+id/button_4" android:text="4"/>
+            <Button android:id="@+id/button_5" android:text="5" />
+            <Button android:id="@+id/button_6" android:text="6"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button android:id="@+id/button_7" android:text="7"/>
+            <Button android:id="@+id/button_8" android:text="8" />
+            <Button android:id="@+id/button_9" android:text="9"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:text="Numero: "
+        android:id="@+id/text_view_numero"
+        android:layout_below="@id/table_layout"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

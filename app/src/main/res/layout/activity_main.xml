@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.miguelacio.sudokuandroid.MainActivity">
+
+    <TableLayout
+        android:layout_width="337dp"
+        android:layout_height="337dp"
+        android:id="@+id/table_layout_main"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:id="@+id/tableRow1"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/cellGroupFragment"
+                android:name="mx.miguelacio.sudokuandroid.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:tag="0"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment2"
+                android:name="mx.miguelacio.sudokuandroid.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:tag="1"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment3"
+                android:name="mx.miguelacio.sudokuandroid.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:tag="2"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/cellGroupFragment4"
+                android:name="mx.miguelacio.sudokuandroid.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:tag="3"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment5"
+                android:name="mx.miguelacio.sudokuandroid.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:tag="4"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment6"
+                android:name="mx.miguelacio.sudokuandroid.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:tag="5"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="117dp">
+
+            <fragment
+                android:id="@+id/cellGroupFragment7"
+                android:name="mx.miguelacio.sudokuandroid.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:tag="6"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment8"
+                android:name="mx.miguelacio.sudokuandroid.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:tag="7"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment9"
+                android:name="mx.miguelacio.sudokuandroid.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:tag="8"
+                android:layout_weight="1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/button_check"
+        android:layout_below="@id/table_layout_main"
+        android:layout_centerHorizontal="true"
+        android:text="Check"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
